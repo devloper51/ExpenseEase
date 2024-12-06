@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       doc.setFontSize(25);
       doc.setTextColor(0, 0, 255); // Blue color for company name
       doc.setFont('helvetica', 'bold');
-      doc.text('ExpenseEase Pvt. Ltd.', 105, 20, { align: 'center' });
+      doc.text('ExpenseEase', 105, 20, { align: 'center' });
 
       doc.setFontSize(12);
       doc.setTextColor(0, 0, 0);
