@@ -23,7 +23,7 @@ window.onload = function () {
   document.getElementById('logoutBtn').addEventListener('click', function () {
     localStorage.removeItem('userLoggedIn');
     localStorage.removeItem('username');
-    window.location.href = 'homepage.html'; // Redirect to homepage after logout
+    window.location.href = 'index.html'; // Redirect to homepage after logout
   });
 
   // Retrieve total expense from local storage
