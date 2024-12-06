@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExpenseEase Dashboard</title>
+  <script src="dashboard.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-3 flex justify-between items-center shadow-md">
+    <div class="text-white text-2xl font-bold flex items-center">
+      <span class="mr-2">ExpenseEase</span>
+    </div>
+
+    <div class="flex items-center space-x-4">
+      <!-- Currency Converter -->
+      <select id="currencySelector" class="bg-white p-2 rounded-md shadow-sm text-gray-700" value="INR">
+        <option value="USD">USD ($)</option>
+        <option value="EUR">EUR (€)</option>
+        <option value="INR" selected>INR (₹)</option>
+        <option value="GBP">GBP (£)</option>
+      </select>
+
+      <!-- Profile Icon -->
+      <div class="relative">
+        <button id="profileBtn" class="flex items-center text-white space-x-2">
+          <img src="images/man.png" alt="Profile Icon" class="w-8 h-8" />
+          <span id="username" class="hidden sm:block"> Welcome </span>
+        </button>
+        <!-- Dropdown Menu -->
+        <div id="profileDropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden">
+          <ul class="py-2">
+            <li>
+              <button id="logoutBtn" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-full text-left">
+                Logout
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="bg-gray-200 w-1/4 min-h-screen p-4">
+      <ul class="space-y-4">
+        <li>
+          <a href="addexpense.html" class="block text-gray-700 hover:text-blue-600">Add Expense </a>
+        </li>
+        <li>
+          <a href="charts.html" class="block text-gray-700 hover:text-blue-600">Graphs & Charts</a>
+        </li>
+        <li>
+          <a href="groupsharing.html" class="block text-gray-700 hover:text-blue-600">Expense Sharing</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <!-- Welcome Section -->
+      <div class="bg-blue-100 p-6 rounded-md shadow-lg mb-6 text-center text-blue-700">
+        <h1 class="text-3xl font-bold">Welcome to ExpenseEase!</h1>
+        <p class="mt-2">Track your expenses efficiently and effortlessly.</p>
+      </div>
+
+      <!-- Total Expense Section -->
+      <div class="bg-white p-4 rounded-md shadow mx-auto max-w-xs">
+        <h2 class="font-bold text-lg text-center">Total Expenses</h2>
+        <p id="totalExpenses" class="text-2xl mt-2 text-gray-700">₹0.00</p>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

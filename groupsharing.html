@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Sharing</title>
+  <script src="groupSharing.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <nav class="bg-blue-600 p-3 flex justify-between items-center shadow-md">
+    <div class="text-white text-2xl font-bold flex items-center">
+      <a href="dashboard.html"><span class="mr-2">ExpenseEase</span></a>
+    </div>
+  </nav>
+
+  <main class="flex-1 p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Group Sharing</h1>
+    <form id="groupSharingForm" class="max-w-lg mx-auto bg-white p-6 rounded-md shadow-md">
+      <div class="mb-4">
+        <label for="totalAmount" class="block text-sm font-medium">Total Amount</label>
+        <input type="number" id="totalAmount" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2" required />
+      </div>
+      <div class="mb-4">
+        <label for="numPeople" class="block text-sm font-medium">Number of People</label>
+        <input type="number" id="numPeople" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2" required />
+      </div>
+      <div class="mb-4">
+        <label for="category" class="block text-sm font-medium">Category</label>
+        <input type="text" id="category" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2" required />
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md">Calculate and Share</button>
+    </form>
+
+    <div id="sharedExpensesList" class="mt-6 max-w-lg mx-auto bg-white p-4 rounded-md shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Shared Expenses</h2>
+      <!-- Shared expenses will be dynamically added here -->
+    </div>
+  </main>
+</body>
+
+</html>
