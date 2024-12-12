@@ -64,6 +64,19 @@ lg:effect - larger screens and larger. min-width=1024px if the width>1024px the 
 &copy; will give the copyright symbol 
 
 git commands : to run after any changes :
-git add .
-git comit -m "any comment name "
-git push -u origin main 
+git init - Initialize a new git repositary 
+git add <file name> - this will add only file 
+git add . - all files will be added to the current directory 
+git comit -m "any comment name "  - this will take a snapshot of the changes you have made and you can add a comment / message for the change is all about  
+git branch 
+git push -u origin main  - Local repo will move to the remote repositary
+git is a versin control system and git is a primarly local tool we can manage our repositiries on your local machine  
+git can operated through terminal 
+git is used to manage the verisons of your project and git focuses on tracking changes and managing code 
+
+Github is a web based platform that hosts git repositories 
+git operates locally while github is used to share repo with others by making them online available
+Local git repo is being pushed to github 
+Github provides hosting  for static websites 
+
+In simple words Git is the engine of the car and the github is the entire car 
