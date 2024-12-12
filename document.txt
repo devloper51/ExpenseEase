@@ -62,3 +62,8 @@ md:effect - so NOW on medium screens and larger screens the written effect will 
 sm:effect - small screens and larger the written effect will be worked min-widht=640px so width>640px the effect will be applied 
 lg:effect - larger screens and larger. min-width=1024px if the width>1024px the effect will be applied to the container in which class is defined 
 &copy; will give the copyright symbol 
+
+git commands : to run after any changes :
+git add .
+git comit -m "any comment name "
+git push -u origin main 
