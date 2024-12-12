@@ -32,17 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Download PDF button
   downloadPdfBtn.addEventListener('click', () => {
-      const { jsPDF } = window.jspdf; // Ensure jsPDF is available
-      const doc = new jsPDF();
+      const { jsPDF } = window.jspdf; // Ensure jsPDF is available  and it uses destructuirng to extract js pdf file 
+      const doc = new jsPDF();  // this will  create a  new page for the pdf 
 
       // Document Header
       doc.setFontSize(25);
-      doc.setTextColor(0, 0, 255); // Blue color for company name
+      doc.setTextColor(0, 0, 255); // here RGB COLOR THEME IS USED 0 for red , 0 for green and the 255 for the blue 
       doc.setFont('helvetica', 'bold');
-      doc.text('ExpenseEase', 105, 20, { align: 'center' });
+      doc.text('ExpenseEase', 105, 20, { align: 'center' });  // here 105 is for the x cordinate and the 20 is for the y cordinate 
 
       doc.setFontSize(12);
-      doc.setTextColor(0, 0, 0);
+      doc.setTextColor(0, 0, 0);  // here r,g,b = (0,0,0) this means the color is black 
       doc.setFont('helvetica', 'normal');
       doc.text('expenseease@gmail.com', 105, 30, { align: 'center' });
       doc.text('GST: 06ABCPQ1234R1Z5', 105, 40, { align: 'center' });
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       expenses.forEach(expense => {
           doc.text(expense.expenseName, 10, y);
           doc.text(expense.category, 60, y);
-          doc.text(expense.amount.toFixed(2), 120, y); // Directly display amount without currency symbol
+          doc.text(expense.amount.toFixed(2), 120, y); 
           doc.text(new Date(expense.date).toLocaleDateString(), 170, y);
           y += 10;
 
