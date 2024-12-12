@@ -23,7 +23,7 @@ items-center - align items at the center
 
 To align the items horizontally and Vertically : use both horizontally alignment and the vertical alignment :
 justify-center and items-center - the item willl be centered to both horizontally and vertically
-h-screen - makt the container height equal to the viewport height   
+h-screen - make the container height equal to the viewport height   
 FLex Wrap - Allow items to wrap on the multiple lines :  on Scrolling the page the items will be wrapped :
 
 
@@ -38,7 +38,7 @@ padding - horizontally and vertically - px-2 , py-2   so px- padding on the left
 
 Margin is the utility class which adds the space outside an element,between the element and the neighouring element 
 Margin - Individual Sides : mt-2 , mb-2 , mr-2, ml-2 so t=top b=bottom r=right , l=left 
-Marhin - horizontally and vertically - mx-2 this will add margin to the left and right side and my-2 this will add the margin to the top and bottom 
+Margin - horizontally and vertically - mx-2 this will add margin to the left and right side and my-2 this will add the margin to the top and bottom 
 
 properties Of the Text :
 text-color = text-red = text color will be changed
@@ -54,9 +54,10 @@ border-{widht}= border-2 sets the border width to 2px
 border-{color}=border-red border color will be changed to red 
 border-{style}=border-dashed , border-solid,border-dotted,border-doubled 
 Border-Radius = rounded-{size}=rounded-full,rounded-xl,rounded-md rounded-sm
-Border to the Specific Sides : border-t-{size}, top pr border add hoga border-r{size} = this will add the border to the right 
+Border to the Specific Sides : border-t-{size}, top pr border add hoga border-r-{size} = this will add the border to the right 
 
 container = parent pr class lagege and the child of the parent will be constrained and centered : it provides responsive layouts :
+
 Responsive Prefixes :
 md:effect - so NOW on medium screens and larger screens the written effect will be applied. min-width=768px so width>768px the effect will be applied
 sm:effect - small screens and larger the written effect will be worked min-widht=640px so width>640px the effect will be applied 

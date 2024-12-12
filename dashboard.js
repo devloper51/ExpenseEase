@@ -1,5 +1,6 @@
 window.onload = function () {
   // Check if the user is logged in by checking localStorage
+  // here the value of the userLoggedIn is either ture or false : if it will be ture if statement (false ) and the if it will be false then the  if statement(true)
   if (!localStorage.getItem('userLoggedIn')) {
     window.location.href = 'loginpage.html'; // Redirect if not logged in
   } else {

@@ -14,6 +14,7 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
   // JSON.stringify() - This will converts an Object into a string to save the data in the local storage :
   // JSON.parse() - This will convert the string data into the object :
   // Both functions will take input a variable 
+  // localStorage.setItem(key:string , value:string )
   localStorage.setItem('userLoggedIn', 'true');
   localStorage.setItem('username', username);
   localStorage.setItem('email', email);

@@ -10,18 +10,13 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
   const savedPassword = localStorage.getItem('password');
   const username = localStorage.getItem('username'); // Retrieve username
 
-  // Debugging logs
-  console.log('Login - savedEmail:', savedEmail);
-  console.log('Login - savedPassword:', savedPassword);
-  console.log('Login - username:', username);
-
   // === strict checking = data type will be checked if string == string
   if (email === savedEmail && password === savedPassword) {
     localStorage.setItem('userLoggedIn', 'true');
     console.log('Login successful, redirecting to dashboard...'); // Confirm successful login
 
     // No need to set username again as it is already correct
-    window.location.href = 'dashboard.html'; // Redirect to dashboard
+    window.location.href = 'dashboard.html'; // Redirect to dashboard  // this line of code will redirect the user to the dashboard.html page 
     // window.location is a built in  object of the java script returns the address of the same page 
   } else {
     alert('Invalid email or password');

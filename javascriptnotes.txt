@@ -1,0 +1,9 @@
+JSON.stringify(variable ) - Converts this variable of object type to String type 
+JSON.parse(variable) - converts this cariable of the string type to object type 
+
+document.querrySelector('.classname')  - this will return the first element from the complete document whose class name will be matched - This also returns a single element 
+document.querrySelectorAll('.classname ')-this will return a node list of all the elements matching the same classs - collection of objects will be returned in the form of the node list and for each loop can be used on a node list 
+
+getElementById - is unique for the id and returns a single element 
+getElementByClassName - selects all the elements with the specified class names - Returns collection of elements and doesnot give an array so we will have to convert the given to the array 
+array.of() and array.from() will convert the given input into the array 

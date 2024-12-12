@@ -31,6 +31,10 @@ action = after submiting the form where the data will be processed or we can say
 method = Defines the HTTP method that will be used to send the data to the server GET/POST  
 GET - data will be the part of thee URL 
 POST - data will be psss in the form of the body of request 
+HTTPS - Hyper text Transfer protocol secure 
+HTTP - Hyper text transfer protocol 
+href = hypertext reference 
+Url= uniform resource locator 
 
 Inline and Block Elements :
 
