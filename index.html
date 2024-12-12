@@ -1,9 +1,15 @@
 <!DOCTYPE html>
+<!-- doctype signifies the file type that means the html and the version of the html 5  -->
 <html lang="en">
-<head>
+  <!-- head contains the meta data -->
+<head> 
+  <!-- charset - ensures that  the text will be displayed correctly and all symbols can be used  -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- visible area of the webpage = viewport  -->
+   <!-- initial scale 1.0 = set the initial zoom level of page to be 100 % -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Expense Ease</title>
+  <!-- CDN - Contact delivery netwrok   include the tailwind css library  -->
   <script src="https://cdn.tailwindcss.com"></script>
  
   <style>
@@ -29,27 +35,27 @@
 <body class="bg-gray-100">
     <!-- ================= NAVBAR ================= -->
     <nav class="bg-blue-500 p-4">
+      <!-- container - used to create a centered container with a maximum width  -->
       <div class="container mx-auto flex justify-between items-center">
         <!-- Navbar Title -->
         <a href="index.html" class="text-white text-2xl font-semibold ml-4">Expense Ease</a>
-  
         <!-- Navbar Links (Home, About Us, Contact Us) -->
+         <!--space - x-6 means space of 6units will be applied between thee items of the flex container   -->
         <div class="flex space-x-6">
           <a href="index.html" class="text-white hover:text-blue-300">Home</a>
           <a href="aboutus.html" class="text-white hover:text-blue-300">About Us</a>
           <a href="contactus.html" class="text-white hover:text-blue-300">Contact Us</a>
         </div>
-        
         <!-- Combined Login/Signup Button Box -->
+         <!-- p-1 1=4px so the 4px padding will be added to the to all the sides top bottom right left all sides will  have the padding of the 4px -->
         <div class="bg-white border-2 border-blue-600 rounded-full py-2 px-6 text-center">
+          <!-- hover : text-blue-800 this will chane the color of the button on the hover : -->
           <a href="loginpage.html" class="text-blue-600 hover:text-blue-800">Login / Signup</a>
         </div>
       </div>
     </nav>
     <!-- ================= END OF NAVBAR ================= -->
-  
-  
-    <!-- ================= HERO SECTION (Slider) ================= -->
+    <!-- ================= HERO SECTION  ================= -->
 <section class="bg-blue-600 text-white py-16 relative overflow-hidden">
     <div class="container mx-auto text-center">
       <h1 class="text-4xl font-bold mb-4">Welcome to Expense Ease</h1>
@@ -58,12 +64,9 @@
     </div>
   </section>
   <!-- ================= END OF HERO SECTION ================= -->
-  
-  
-  
     <!-- ================= FEATURES SECTION ================= -->
     <section class="py-16 bg-gray-50">
-      <div class="container mx-auto text-center">
+      <div class="container  mx-auto text-center">
         <h2 class="text-3xl font-semibold mb-8">Key Features</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
@@ -76,7 +79,9 @@
             <h3 class="text-xl font-semibold mb-2">Set Budgets</h3>
             <p>Set budgets for different categories and see how well you're sticking to them.</p>
           </div>
+          <!-- Timing in the Transition is in miliseconds : -->
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <!-- Icons included from the flaticon website  -->
             <img src="icons/icon3.png" alt="Icon 3" class="w-12 h-12 mx-auto mb-4">
             <h3 class="text-xl font-semibold mb-2">Analyze Spending</h3>
             <p>Get insights into your spending habits and areas to save.</p>
@@ -85,12 +90,12 @@
       </div>
     </section>
     <!-- ================= END OF FEATURES SECTION ================= -->
-  
-  
     <!-- ================= HOW IT WORKS SECTION ================= -->
     <section class="py-16 bg-white">
       <div class="container mx-auto text-center">
         <h2 class="text-3xl font-semibold mb-8">How It Works</h2>
+        <!-- flex flex-col will arrange the elements vertically from top to bottom  -->
+         <!-- md : -medium screens and above the effect will be apllied -->
         <div class="flex flex-col md:flex-row justify-around items-center">
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 mb-8 md:mb-0">
             <h3 class="text-xl font-semibold mb-2">1. Register</h3>
@@ -108,8 +113,6 @@
       </div>
     </section>
     <!-- ================= END OF HOW IT WORKS SECTION ================= -->
-  
-  
     <!-- ================= CALL TO ACTION SECTION ================= -->
     <section class="bg-blue-600 text-white py-16 text-center">
       <h2 class="text-3xl font-semibold mb-4">Start Managing Your Finances Today ! </h2>
@@ -117,7 +120,6 @@
       <a href="signuppage.html" class="bg-white text-blue-600 py-2 px-6 rounded-full text-lg hover:bg-blue-100">Sign Up</a>
     </section>
     <!-- ================= END OF CALL TO ACTION SECTION ================= -->
-
    <!-- ================= FOOTER ================= -->
    <footer class="bg-blue-500 text-white py-6">
     <div class="container mx-auto text-center">
@@ -125,10 +127,5 @@
     </div>
   </footer>
   <!-- ================= END OF FOOTER ================= -->
-
   </body>
-  
-
-
-
 </html>

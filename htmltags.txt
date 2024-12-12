@@ -1,0 +1,41 @@
+<span> inline container 
+<link> is used to link the css files 
+
+<script  src=""> this is used to link the Javascript files 
+<a href="loginpage.html"> defines hyperlinks to navigate between the web pages 
+<img src="filename", alt="image will not be loaded this text will be visible to the user ">  used to add a image on the webapge, src tells about the image location 
+Headings Tags :  - SEO optimisation :
+<h1>= highest priority 
+<h6>= Lowest priority
+<p> paragraph text = used to organize the textual content on a webapge 
+Lists Tags :
+<ul> unordered lists - Order of items does not matter - Represented By  Bullet Points (square or circles markers )
+<ol> Ordered Lists - Order of the items will Matter - Represented with Numbers or letters (1,2,3,4 or a,b,c,d)
+Both the lists ordered and unordered lists use the <li> tag for the list items inside the container 
+
+Different Types of Input Tags based on the Different types :
+<input type="text " placeholder="Enter your name "  TYPE IS TEXT - so it will store the text in it 
+<input type="password"   TYPE IS PASSWORD - So it will store the password and the data entered by user will not be visible / dots / astericks 
+<input type="email" TYPE IS EMAIL this will accept the email addrees of a user - check if it contains @ 
+<input type ="number " TYPE IS NUMBER - THIS will accept the numbers and we can define (min,max,and the step size )
+<input type="date" THIS TYPE IS DATE - this allow user to select the dates 
+<input type="submit" THIS TYPE IS SUBMIT - Creates a button to submiit the form  
+<input type = "file " This TYPE IS FILE - Allow user to select the files from the thier devices / systems 
+<input type="checkbox " this will allow user to select multiple inputs 
+<input type="radio " this will allow user to select only one option     
+<input type="time " this will allow user to select the time 
+
+Form Tag :  Represent a Form for the User Input :
+<form action="" method =" GET / POST ">  
+action = after submiting the form where the data will be processed or we can say where the data will be stored 
+method = Defines the HTTP method that will be used to send the data to the server GET/POST  
+GET - data will be the part of thee URL 
+POST - data will be psss in the form of the body of request 
+
+Inline and Block Elements :
+
+INLINE - Only takes as much width is necessary and does not start on the new line 
+INLINE - Eg = <span> <a> <strong> <em>
+
+Block - It takes the full width of the parent container and always start on the new line 
+BLOCK - Eg = <div> <p> <section> <h1> <article>

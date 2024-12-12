@@ -13,7 +13,8 @@
       min-height: 100vh;
     }
     main {
-      flex: 1;
+      /* flex-grow, flex-shrink this property will be applied to give the responsive  */
+      flex: 1;  
     }
   </style>
 </head>
@@ -28,14 +29,14 @@
       </ul>
     </div>
   </nav>
-  
-  <!-- Main Content -->
   <main class="flex-grow">
     <!-- Login Form -->
+     <!-- max-w-lg it will set the maximum width of the container  -->
     <div class="max-w-lg mx-auto mt-10 p-8 bg-white shadow-md rounded-md">
       <h1 class="text-3xl font-semibold font-serif text-center mb-6">Welcome Back!</h1>
       <form id="login-form">
         <div class="mb-4">
+          <!-- class=block will set the display type to block of the container and the container will look like the block : -->
           <label for="email" class="block text-sm font-medium">Email</label>
           <input type="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2" placeholder="Enter your email" required />
         </div>
@@ -50,9 +51,9 @@
       </p>
     </div>
   </main>
-
   <!-- Footer -->
   <footer class="bg-blue-500 text-white text-center py-4">
+    <!-- &copy; will be give the copyright symbol-->
     <p>&copy; 2024 ExpenseEase. All rights reserved.</p>
   </footer>
 </body>

@@ -1,0 +1,64 @@
+
+
+
+Flex Box - Layout in the Tailwind  Css allows you to arrange items in a container along the single axis (horizontally / vertical)       
+Flex Box is used to arrange the items in One dimensional only either (rows / columns )
+flex properties :
+flex container - enables flexbox on the container
+flex-direction :
+flex-row - align items from left to right   horizontally 
+flex-row-reverse - align items from right to left 
+flex-col-align items Vertically - ( Top to Bottom )
+flex-col-reverse - align items Vertically form ( Bottom to top )
+
+Justify Content - horizontally Alignment :   Justify - horizontally alignment
+justify-start - align items to start 
+justify end - align items to end 
+justify center - align items to the center 
+justify between - distribute items with space between 
+justify- around - add equal spaceing around the items :
+Align items - Vertically Alignment:    Items - Vertically alignment
+items-satrt - align items at the start 
+items-center - align items at the center 
+
+To align the items horizontally and Vertically : use both horizontally alignment and the vertical alignment :
+justify-center and items-center - the item willl be centered to both horizontally and vertically
+h-screen - makt the container height equal to the viewport height   
+FLex Wrap - Allow items to wrap on the multiple lines :  on Scrolling the page the items will be wrapped :
+
+
+Flex Grow, Shrink :
+flex-grow -1 so this item will be grow one time relative to the other items if the space is available :
+
+Grid is used to arrange the items in the Two dimensional (rows and columns )
+
+Padding : adds space inside an element :
+Padding - Individual Sides :  pt-2,pb-2,pr-2,pl-2.
+padding - horizontally and vertically - px-2 , py-2   so px- padding on the left and right side , py - padding on the top and Bottom 
+
+Margin is the utility class which adds the space outside an element,between the element and the neighouring element 
+Margin - Individual Sides : mt-2 , mb-2 , mr-2, ml-2 so t=top b=bottom r=right , l=left 
+Marhin - horizontally and vertically - mx-2 this will add margin to the left and right side and my-2 this will add the margin to the top and bottom 
+
+properties Of the Text :
+text-color = text-red = text color will be changed
+text-size = text-2xl , text-lg , text size will be changed 
+text-alignment = text-center  align text horizontally 
+text-weight = font-bold - text will be in the bold 
+font-serif = can change the value of the font of the text 
+text-italic = italic the text 
+text-line-through = strikethrough effect to the text 
+
+Border properties :
+border-{widht}= border-2 sets the border width to 2px 
+border-{color}=border-red border color will be changed to red 
+border-{style}=border-dashed , border-solid,border-dotted,border-doubled 
+Border-Radius = rounded-{size}=rounded-full,rounded-xl,rounded-md rounded-sm
+Border to the Specific Sides : border-t-{size}, top pr border add hoga border-r{size} = this will add the border to the right 
+
+container = parent pr class lagege and the child of the parent will be constrained and centered : it provides responsive layouts :
+Responsive Prefixes :
+md:effect - so NOW on medium screens and larger screens the written effect will be applied. min-width=768px so width>768px the effect will be applied
+sm:effect - small screens and larger the written effect will be worked min-widht=640px so width>640px the effect will be applied 
+lg:effect - larger screens and larger. min-width=1024px if the width>1024px the effect will be applied to the container in which class is defined 
+&copy; will give the copyright symbol 

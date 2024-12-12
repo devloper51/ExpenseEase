@@ -37,15 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Document Header
       doc.setFontSize(25);
-      doc.setTextColor(0, 0, 255); // Blue color for company name
+      doc.setTextColor(0, 0, 255);
       doc.setFont('helvetica', 'bold');
       doc.text('ExpenseEase', 105, 20, { align: 'center' });
 
       doc.setFontSize(12);
       doc.setTextColor(0, 0, 0);
       doc.setFont('helvetica', 'normal');
-      doc.text('SCO 51 Business Park, Gurugram, Haryana', 105, 30, { align: 'center' });
-      doc.text('GST: 06ABCPQ1234R1Z5', 105, 40, { align: 'center' });
       doc.text('Phone: +91-9053129511 ', 105, 50, { align: 'center' });
       doc.text('Email: contact@ExpenseEase.com', 105, 60, { align: 'center' });
 
